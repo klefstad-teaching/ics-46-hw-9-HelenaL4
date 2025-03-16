@@ -56,12 +56,12 @@ void print_path(const vector<int>& v, int total) {
         cout << "No path exists." << endl;
         return;
     }
-    cout << "Shortest Path: ";
     for(size_t i = 0; i < v.size(); ++i) {
         cout << v[i];
-        if (i < v.size() - 1) cout << "->";
+        if (i < v.size() - 1) cout << " ";
     }
-    cout << " (Cost: " << total << ")" << endl;
+    cout << endl;
+    cout << "Total cost is " << total << endl;
 }
 
         
